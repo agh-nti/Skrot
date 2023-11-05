@@ -1,0 +1,70 @@
+<!-- index.html  -->
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1T5GH7BV4D"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-1T5GH7BV4D');
+	</script>
+    <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Skrot och Korns Hemsida">
+	<meta name="keywords" content="Skrot, Korn, Verktyg">
+	<meta name="author" content="Anders Hammar">	
+    <link rel="stylesheet" href="style.css"> 
+	<link href="script/menu.css" rel="stylesheet">
+    <title>Skrot och Korn AB</title> 
+</head> 
+  
+<body onload="buildMenu()"> 
+    <div class="parent"> 
+        <header> 
+		<div>
+			<img class="center" alt="logo" src ="media/logo.png">
+		</div>
+			<input class="search" type="text" placeholder="Sök"> 
+        </header> 
+        <div class="left-sidebar"> 
+		    <ul id="meny"></ul>
+        </div> 
+        <main> 
+            <h1> Kontakt </h1>
+			<table>
+			<tr>
+			<th>Namn</th>
+			<th>Titel</th>
+			<th>Bild</th>
+			</tr>
+			<tr>
+			<td><a href="mailto:rolf.pettersson@skrotkorn.se">Rolf Pettersson</a></td>
+			<td>VD</td>
+			<td><img src="media/rolf.png" alt="rolf" width="70" height="90"></td>
+			</tr>
+			<tr>
+			<td><a href="mailto:sara.pettersson@skrotkorn.se">Sara Pettersson</a></td>
+			<td>Säljchef</td>
+			<td><img src="media/sara.png" alt="sara" width="70" height="90"></td>
+			</tr>
+			<tr>
+			<td><a href="mailto:torkel.berg@skrotkorn.se">Torkel Berg</a></td>
+			<td>Kundtjänst</td>
+			<td><img src="media/torkel.png" alt="torkel" width="70" height="90"></td>
+			</tr>
+			</table>
+        </main> 
+        <div class="right-sidebar"> 
+            <a href="https://www.a3cert.com/certifieringar/iso-14001-miljo/"><img src="media/cert.png" alt="Certifikat" style="width:42px;height:42px;"></a>
+			<a href="https://backstroms.se/"><img src="media/ad.png" alt="Reklam" style="width:42px;height:42px;"></a>
+        </div> 
+        <footer>
+			<div style="text-align:center">Adress: Skrotgatan 1, Kornholm <br> Telefon: 099-123123  <br> © Skrot och Korn AB 2023</div>
+		</footer> 
+    </div> 
+	<script src="script/script.js"></script>
+</body> 
+  
+</html>

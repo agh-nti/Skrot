@@ -1,0 +1,85 @@
+<!-- index.html  -->
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1T5GH7BV4D"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-1T5GH7BV4D');
+	</script>
+    <meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Skrot och Korns Hemsida">
+	<meta name="keywords" content="Skrot, Korn, Verktyg">
+	<meta name="author" content="Anders Hammar">	
+    <link rel="stylesheet" href="style.css"> 
+	<link href="script/menu.css" rel="stylesheet">
+    <title>Skrot och Korn AB</title> 
+</head> 
+  
+<body onload="buildMenu()"> 
+    <div class="parent"> 
+        <header> 
+		<div>
+			<img class="center" alt="logo" src ="media/logo.png">
+		</div>
+			<input class="search" type="text" placeholder="Sök"> 
+        </header> 
+        <div class="left-sidebar"> 
+		    <ul id="meny"></ul>
+        </div> 
+        <main> 
+            <h1>Våra Produkter</h1>
+			<table>
+			<tr>
+			<th>Bild</th>
+			<th>Produkt</th>
+			<th>Information</th>
+			<th>Pris visas <button id="taxButton" name="taxCalc" type="button" value="true" onclick="taxCalc(this.value)">exklusive moms</button></th>
+			<th></th>
+			</tr>
+			<tr>
+			<td><img src="media/grav.png" alt="grav" width="70" height="90"></td>
+			<td>Grävskopa 2000</td>
+			<td>Grävskopa 2000 har 2000 hästkrafter och kan lyfta 2000 ton.</td>
+			<td id = price_grav>2 000 000</td>
+			<td><input id = checkbox_grav name="product" value="2000000" type="checkbox" onclick="sumPrice()"></td>
+			</tr>
+			<tr>
+			<td><img src="media/kran.png" alt="kran" width="70" height="90"></td>
+			<td>Lyftkran 3000</td>
+			<td>Lyftkran 3000 har 3000 hästkrafter och kan lyfta 3000 ton.</td>
+			<td id = price_kran>3 000 000</td>
+			<td><input id = checkbox_kran name="product" value="3000000" type="checkbox" onclick="sumPrice()"></td>
+			</tr>
+			<tr>
+			<td><img src="media/last.png" alt="last" width="70" height="90"></td>
+			<td>Lastbil 4000</td>
+			<td>Lastbil 4000 har 4000 hästkrafter och kan frakta 4000 ton.</td>
+			<td id = price_last>4 000 000</td>
+			<td><input id = checkbox_last name="product" value="4000000" type="checkbox" onclick="sumPrice()"></td>
+			</tr>
+			<tr>
+			<td></td>
+			<td></td>
+			<td><b>Summa:</b></td>
+			<td><input value="0 SEK" readonly="readonly" type="text" id="total"></td>
+			<td> </td>
+			</tr>
+			</table>
+        </main> 
+        <div class="right-sidebar"> 
+            <a href="https://www.a3cert.com/certifieringar/iso-14001-miljo/"><img src="media/cert.png" alt="Certifikat" style="width:42px;height:42px;"></a>
+			<a href="https://backstroms.se/"><img src="media/ad.png" alt="Reklam" style="width:42px;height:42px;"></a>
+        </div> 
+        <footer>
+			<div style="text-align:center">Adress: Skrotgatan 1, Kornholm <br> Telefon: 099-123123  <br> © Skrot och Korn AB 2023</div>
+		</footer> 
+    </div> 
+	<script src="script/script.js"></script>
+</body> 
+  
+</html>
