@@ -34,17 +34,20 @@ header {
 main { 
     grid-column: 2 / 3; 
     background-color: floralwhite; 
+	font-family: Arial;
 } 
   
 .right-sidebar { 
     grid-column: 3 / 4; 
-    background-color: lightgrey; 
+    background-color: lightgrey;
+	font-family: Arial;
 } 
   
 footer { 
     grid-column: 1 / 4; 
     background-color: lightblue; 
     color: white; 
+	font-family: Arial;
 } 
 
 .search{
